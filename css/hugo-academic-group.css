@@ -252,7 +252,7 @@ span.darknav {
  *  Biography
  **************************************************/
 
-#profile {
+ #profile {
     text-align: center;
     padding: 30px 10px;
     /* position: relative; */
@@ -260,10 +260,23 @@ span.darknav {
 
 }
 
+
+
 .portrait {
     background-image: url('../img/portraits/portrait.jpg');
     width: 200px;
     height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.medium-portrait {
+    background-image: url('../img/portraits/portrait.jpg');
+    width: 130px;
+    height: 130px;
     margin: 0 auto;
     border-radius: 50%;
     background-size: cover;
@@ -419,34 +432,18 @@ ul.share li:hover .fa {
     color: #888;
 }
 
-/* .debug_blue{
-    border-style: dotted;
-    
-    border-color: #000088;
+.debug{
+   border-style: dotted;
+   border-color: #cd37c5;
 }
-
-
 .debug_pink{
    border-style: dotted;
    border-color: #cd37c5;
 }
 .debug_green{
-    border-style: dotted;
-    
-    border-color: #008000;
-} */
-
-.debug1{
-    border-style: dotted;
-    border-width: thin;
-    border-color: #000000;
- }
-.debug2{
-    border-style: dotted;
-    border-width: thin;
-    border-color: pink;
+   border-style: dotted;
+   border-color: #008000;
 }
-
 
 .text_margin{
     float:left;
@@ -458,16 +455,8 @@ ul.share li:hover .fa {
 }
 
 .my_container{
-
     padding: 0px;
-    max-width: 1150px;
-    min-width: 1150px;
-    margin: 0px auto 0px auto;
-
-    /* clear: both; */
-    /* vertical-align: middle; */
-    
-    
+    margin: 0px 60px 0px 60px;
     /* border-style: double;
     border-color: darkblue; */
 }
@@ -484,14 +473,9 @@ ul.share li:hover .fa {
 }
 
 .div_line{
-    float: left;
-    width: auto;
-    min-width: 50%;
-}
-.div_split{
-    display: inline-flex;
-    width: auto;
-    min-width: 80%;
+     float: left;
+     width: auto;
+     min-width: 50%;
 }
 .position_padding{
     margin: 10px 20px 0 60px;
@@ -501,14 +485,23 @@ ul.share li:hover .fa {
     border-color: #000000;
 
 }
+
+.simpleDIV{
+    padding: 10px;
+    border-width: medium;
+    border-style:solid;
+    border-color: #00FF00;
+}
+
 .positions_frame{
+
     display: inline-flex;
-    margin: 0;
-    width:100%;
+    /* grid-template-columns: 2fr 2fr; */
+    /* margin: 0; */
+    /* width:100%; */
 }
 .positions_border{
     padding: 10px;
-
     border-width: thin;
     border-style:solid;
     border-color: #000000;
@@ -764,27 +757,13 @@ section#projects.home-section .project-tags {
  *  Sponsors
  **************************************************/
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sponsors {
+    text-align: center;
+
+    /* border-style: solid;
+    border-color: #cd37c5; */
 }
 
-.right {
-    display: flex;
-    pad: auto;
-    margin: auto;
-    justify-content: right;
-    align-items: right;
-}
-
-
-.full_width {
-    width: 100%;
-}
-.full_height {
-    height: 100%;
-}
 
 /*************************************************
  *  Members
@@ -800,6 +779,7 @@ section#projects.home-section .project-tags {
 
 #participants > .container > .row > .col-md-2:nth-child(6n+1) {
     clear: both;
+
     border-style: solid;
     vertical-align: middle;
     border-color: #5cb85c;
